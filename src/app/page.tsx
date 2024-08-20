@@ -4,7 +4,7 @@ import s from "./page.module.css"
 
 import { useState } from 'react';
 
-const frases = [
+const respostas = [
   "...",
   "sim",
   "claro",
@@ -20,19 +20,21 @@ const frases = [
 ];
 
 export default function Previsor() {
-  const [frase, setFrase] = useState('');
+  const [resposta, setResposta] = useState('');
 
-  const mostrarFraseAleatoria = () => {
-    const fraseIndex = Math.floor(Math.random() * frases.length);
-    setFrase(frases[fraseIndex]);
+  const FraseAleatoria = () => {
+    const respostasIndex = Math.floor(Math.random() * respostas.length);
+    setResposta(respostas[respostasIndex]);
   };
 
   return (
-    <div className={s.container}>
-      <button onClick={mostrarFraseAleatoria} className={s.button}>
-        Mostrar Frase
-      </button>
-      <p className={s.phraseDisplay}>{frase}</p>
-    </div>
+    <body>
+      <div className={s.pagina}>
+        <button onClick={FraseAleatoria} className={s.botão}>
+          Resposta
+        </button>
+        <p className={s.Mostraresposta}>{resposta}</p>
+      </div>
+    </body>
   );
 }

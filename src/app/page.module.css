@@ -1,22 +1,23 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
+.pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
   
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+.botão {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
   
-  .phraseDisplay {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-  }
+.Mostraresposta {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
