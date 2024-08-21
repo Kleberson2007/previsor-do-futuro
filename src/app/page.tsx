@@ -31,7 +31,7 @@ export default function Previsor() {
     <body>
       <div className={s.pagina}>
         <h1>Site mágico</h1>
-        <p>olá, seja bem vindo(a) ao site mágico, aqui, você pode fazzer uma pergunta que possa ser respondida com sim ou não, e o site ira dar uma resposta ao apertar o botão</p>
+        <p>olá, seja bem vindo(a) ao site mágico, aqui, você pode fazer uma pergunta que possa ser respondida com sim ou não, e o site ira dar uma resposta ao apertar o botão</p>
         <button onClick={FraseAleatoria} className={s.botão}>
           Resposta
         </button>
