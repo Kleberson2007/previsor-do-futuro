@@ -1,5 +1,22 @@
+* {
+    color: white
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, purple, black);
+}
+
+h1 {
+    height: 20px;
+
+}
+
+p {
+    margin-bottom: 25px;
+    text-align: center;
 }
