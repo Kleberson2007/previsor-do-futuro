@@ -22,7 +22,7 @@ const respostas = [
 export default function Previsor() {
   const [resposta, setResposta] = useState('');
 
-  const FraseAleatoria = () => {
+  const fraseAleatoria = () => {
     const respostasIndex = Math.floor(Math.random() * respostas.length);
     setResposta(respostas[respostasIndex]);
   };
@@ -32,7 +32,7 @@ export default function Previsor() {
       <div className={s.pagina}>
         <h1>Site mágico</h1>
         <p>olá, seja bem vindo(a) ao site mágico, aqui, você pode fazer uma pergunta que possa ser respondida com sim ou não, e o site ira dar uma resposta ao apertar o botão</p>
-        <button onClick={FraseAleatoria} className={s.botão}>
+        <button onClick={fraseAleatoria} className={s.botão}>
           Resposta
         </button>
         <p className={s.Mostraresposta}>{resposta}</p>
